@@ -1,0 +1,5 @@
+flask
+flask_sqlalchemy
+face_recognition
+numpy
+pillow
