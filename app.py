@@ -149,7 +149,7 @@ def login():
             login_encoding = encs[0]
             registered_encoding = user.get_encoding()
             
-            match = compare_encodings(registered_encoding, login_encoding, tolerance=0.6)
+            match = compare_encodings(registered_encoding, login_encoding, tolerance=0.2)
             
             if match:
                 session['user_id'] = user.id
