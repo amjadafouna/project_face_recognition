@@ -137,7 +137,7 @@ def login():
             encs = face_recognition.face_encodings(image)
             
             if not encs:
-                flash("لم يتم العثور على وجه في الصورة.', 'danger')
+                flash('لم يتم العثور على وجه في الصورة.', 'danger')
                 return redirect(url_for('login'))
                 
             login_encoding = encs[0]
